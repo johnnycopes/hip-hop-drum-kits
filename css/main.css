@@ -1,0 +1,106 @@
+/*=======================
+STYLES / LAYOUT
+=======================*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, main {
+  height: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #1d1d1d;
+  font-weight: 100;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 20px solid #FFF;
+}
+
+.lex-luger {
+  background-image: url('../img/Lex-Luger-car.jpg');
+}
+
+.mike-will {
+  background-image: url('../img/mikewill.jpg');
+}
+
+.metro-boomin {
+  background-image: url('../img/metro-boomin.jpg');
+}
+
+.splash {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.splash::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+header {
+  position: absolute;
+  top: 0rem;
+  text-align: center;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 100;
+}
+
+kbd {
+  text-transform: uppercase;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 4rem;
+}
+
+span {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.keys {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  width: 80%;
+  z-index: 2;
+}
+
+.key {
+  display: inline-block;
+  border: 2px solid #1d1d1d;
+  height: 7rem;
+  width: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.05s;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #FFF;
+}
