@@ -16,39 +16,39 @@
         <div class="keys flex-width">
             <div data-key="65" class="key">
                 <kbd>a</kbd>
-                <span class="audio/lex_luger_kit/808.wav">808</span>
+                <span>808</span>
             </div>
             <div data-key="83" class="key">
                 <kbd>s</kbd>
-                <span class="audio/lex_luger_kit/kick.wav">kick</span>
+                <span>kick</span>
             </div>
             <div data-key="68" class="key">
                 <kbd>d</kbd>
-                <span class="audio/lex_luger_kit/hat.wav">hat</span>
+                <span>hat</span>
             </div>
             <div data-key="70" class="key">
                 <kbd>f</kbd>
-                <span class="audio/lex_luger_kit/clap.wav">clap</span>
+                <span>clap</span>
             </div>
             <div data-key="71" class="key">
                 <kbd>g</kbd>
-                <span class="audio/lex_luger_kit/crash.wav">crash</span>
+                <span>crash</span>
             </div>
             <div data-key="72" class="key">
                 <kbd>h</kbd>
-                <span class="audio/lex_luger_kit/hi.wav">vox</span>
+                <span>fx</span>
             </div>
             <div data-key="74" class="key">
                 <kbd>j</kbd>
-                <span class="audio/lex_luger_kit/snare.wav">snare</span>
+                <span>snare</span>
             </div>
             <div data-key="75" class="key">
                 <kbd>k</kbd>
-                <span class="audio/lex_luger_kit/misc.wav">misc</span>
+                <span>misc</span>
             </div>
             <div data-key="76" class="key">
                 <kbd>l</kbd>
-                <span class="audio/lex_luger_kit/lex_tag.wav">tag</span>
+                <span>tag</span>
             </div>
         </div>
         <footer class="flex-width">
@@ -67,15 +67,16 @@
     </main>
 
 
-    <audio data-key="65" src="audio/lex_luger_kit/808.wav"></audio>
-    <audio data-key="83" src="audio/lex_luger_kit/kick.wav"></audio>
-    <audio data-key="68" src="audio/lex_luger_kit/hat.wav"></audio>
-    <audio data-key="70" src="audio/lex_luger_kit/clap.wav"></audio>
-    <audio data-key="71" src="audio/lex_luger_kit/crash.wav"></audio>
-    <audio data-key="72" src="audio/lex_luger_kit/hi.wav"></audio>
-    <audio data-key="74" src="audio/lex_luger_kit/snare.wav"></audio>
-    <audio data-key="75" src="audio/lex_luger_kit/misc.wav"></audio>
-    <audio data-key="76" src="audio/lex_luger_kit/tag.wav"></audio>
+    <!-- set drumkit audio files -->
+    <audio data-key="65" id="audio_808"></audio>
+    <audio data-key="83" id="audio_kick"></audio>
+    <audio data-key="68" id="audio_hat"></audio>
+    <audio data-key="70" id="audio_clap"></audio>
+    <audio data-key="71" id="audio_crash"></audio>
+    <audio data-key="72" id="audio_fx"></audio>
+    <audio data-key="74" id="audio_snare"></audio>
+    <audio data-key="75" id="audio_misc"></audio>
+    <audio data-key="76" id="audio_tag"></audio>
 
     <script src="js/main.js"></script>
 </body>
